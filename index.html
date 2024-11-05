@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Currency Converter</h1>
+        <input type="number" id="amountInput" placeholder="Enter amount">
+        
+        <div class="currency-selection">
+            <select id="fromCurrency">
+                <option value="USD">USD - US Dollar</option>
+                <option value="BRL">BRL - Brazilian Real</option>
+                <option value="EUR">EUR - Euro</option>
+                <option value="JPY">JPY - Japanese Yen</option>
+                <!-- Adicione mais opções conforme necessário -->
+            </select>
+            
+            <span>to</span>
+            
+            <select id="toCurrency">
+                <option value="USD">USD - US Dollar</option>
+                <option value="BRL">BRL - Brazilian Real</option>
+                <option value="EUR">EUR - Euro</option>
+                <option value="JPY">JPY - Japanese Yen</option>
+            </select>
+        </div>
+
+        <button onclick="convertCurrency()">Convert</button>
+        <div class="result" id="result">
+            <!-- Result will be displayed here -->
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
