@@ -2,7 +2,7 @@ async function convertCurrency() {
     const amount = document.getElementById('amountInput').value;
     const fromCurrency = document.getElementById('fromCurrency').value;
     const toCurrency = document.getElementById('toCurrency').value;
-    const apiKey = '21e39512cb67319847d64f9b903aac97'; // Substitua com sua chave da API de câmbio
+    const apiKey = '21e39512cb67319847d64f9b903aac97';
     const url = `https://api.exchangerate-api.com/v4/latest/${fromCurrency}`;
 
     try {
